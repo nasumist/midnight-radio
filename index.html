@@ -13,13 +13,19 @@
             font-weight: normal;
             font-style: normal;   }
 
-            @media(max-width:600px){.information {margin-left:20px !important; margin-right:20px !important;}}
+            @media(max-width:600px){
+                .information {margin-left:20px !important; margin-right:20px !important;}
+                .title h1 {font-size:30px !important; padding:10px !important; letter-spacing:3px !important; white-space:nowrap; }
+                .title img {width:55px !important; min-width:55px !important;}
+                .rules p{font-size:11px; white-apace:nowrap;}
+                body {overflow-x:hidden;}
+        }
     </style>
 </head>
 
 <body style="background-color:#111111; color:white; font-family:'Oradano-mincho-GSRR';">
 
-<section style="display:flex; align-items:center; justify-content:center; margin-top:30px; margin-bottom:30px; border-top:20px double rgb(69, 49, 124); border-bottom:20px double rgb(69, 49, 124);">
+<section class="title" style="display:flex; align-items:center; justify-content:center; margin-top:30px; margin-bottom:30px; border-top:20px double rgb(69, 49, 124); border-bottom:20px double rgb(69, 49, 124);">
     <img src="skull2.png" style="width:100px; min-width:100px; flex-shrink:0;">
     <h1 style="padding:28px; text-align:center; letter-spacing:8px; font-size:50px; font-family:'Oradano-mincho-GSRR';">MIDNIGHT RADIO</h1>
     <img src="brain.png" style="width:100px; min-width:100px; flex-shrink:0; ">
@@ -39,7 +45,7 @@
     <h3 style= "font-family:'Oradano-mincho-GSRR'; color:rgb(179, 69, 69);">周波数を維持してください。</h3>
 </section>
 
-<section style="margin-top:100px; text-align:center; font-family:'Oradano-mincho-GSRR';">
+<section class="rules" style="margin-top:100px; text-align:center; font-family:'Oradano-mincho-GSRR';">
     <h2>禁止事項</h2>
 <p>受信機を床面から43cm未満の位置に設置しないでください。</p>
 <p>放送中、受信機と同じ部屋に7個以上の椅子を配置しないでください。</p>
